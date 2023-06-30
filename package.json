@@ -1,5 +1,5 @@
 {
-  "name": "country-state-city",
+  "name": "vk-country-state-city",
   "version": "1.0.0",
   "description": "Get country names, states, cities",
   "main": "country-state-city.js",
@@ -13,6 +13,7 @@
   "keywords": [
     "country-state-city"
   ],
+  "type": "module",
   "author": "thenamevishnu",
   "license": "ISC",
   "bugs": {

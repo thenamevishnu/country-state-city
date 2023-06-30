@@ -5,7 +5,7 @@ getCountries().then(response => {
     getStates(country).then(response => {
         const state = response[0].name
         getCities(country,state).then(response => {
-            console.log(response);
+           console.log(response);
         })
     })
 })

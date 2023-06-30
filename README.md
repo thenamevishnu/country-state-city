@@ -1,20 +1,16 @@
-# country-state-city
 
-[![Node.js Package](https://github.com/thenamevishnu/country-state-city/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/thenamevishnu/country-state-city/actions/workflows/npm-publish.yml)
+## Installation
+```
+$ npm i vk-country-state-city
+```
 
-<h2>How to Use ? </h2>
+## Usage
+```js
+import {getCities, getCountries, getStates} from "./country-state-city.js" 
 
-<b>Nodejs<b>
+getCountries().then(response => console.log(response)) // [{name:"india",iso2:"IN",iso3:"IND"}] 
 
-import {getCities, getCountries, getStates} from "./country-state-city.js"
+getStates(country).then(response => console.log(response)) // [{name:"Kerala",code:"KL"}]
 
-getCountries().then(response => {
-    const country = response[0].name
-    getStates(country).then(response => {
-        const state = response[0].name
-        getCities(country,state).then(response => {
-            console.log(response);
-        })
-    })
-})
-
+getCities(country,state).then(response => console(response)) // ["Kozhikode"]
+```
