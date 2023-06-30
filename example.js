@@ -1,11 +1,16 @@
-import {getCities, getCountries, getStates} from "./country-state-city.js"
+import {getCountries, getStates, getCities} from "vk-country-state-city"
 
-getCountries().then(response => {
-    const country = response[0].name
-    getStates(country).then(response => {
-        const state = response[0].name
-        getCities(country,state).then(response => {
-           console.log(response);
-        })
-    })
-})
+const main = async () => {
+    const countries = await getCountries()
+    const country = countries[0].name
+    console.log(country) // Eg: [{name:"India",iso2:"IN",iso3:"IND"}]
+
+    const states = await getStates(country)
+    const state = states[0].name
+    console.log(state) // Eg: [{name:"Kerala",code:"KL"}]
+
+    const cities = await getCities(country, state)
+    console.log(cities) // Eg: ["kozhikode"]
+}
+
+main()

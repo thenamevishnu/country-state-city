@@ -6,11 +6,20 @@ $ npm i vk-country-state-city
 
 ## Usage
 ```js
-import {getCities, getCountries, getStates} from "./country-state-city.js" 
+import {getCountries, getStates, getCities} from "vk-country-state-city"
 
-getCountries().then(response => console.log(response)) // [{name:"india",iso2:"IN",iso3:"IND"}] 
+const main = async () => {
+    const countries = await getCountries()
+    const country = countries[0].name
+    console.log(country) // Eg: [{name:"India",iso2:"IN",iso3:"IND"}]
 
-getStates(country).then(response => console.log(response)) // [{name:"Kerala",code:"KL"}]
+    const states = await getStates(country)
+    const state = states[0].name
+    console.log(state) // Eg: [{name:"Kerala",code:"KL"}]
 
-getCities(country,state).then(response => console.log(response)) // ["Kozhikode"]
+    const cities = await getCities(country, state)
+    console.log(cities) // Eg: ["kozhikode"]
+}
+
+main()
 ```
