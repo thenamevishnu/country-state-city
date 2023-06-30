@@ -12,5 +12,5 @@ getCountries().then(response => console.log(response)) // [{name:"india",iso2:"I
 
 getStates(country).then(response => console.log(response)) // [{name:"Kerala",code:"KL"}]
 
-getCities(country,state).then(response => console(response)) // ["Kozhikode"]
+getCities(country,state).then(response => console.log(response)) // ["Kozhikode"]
 ```

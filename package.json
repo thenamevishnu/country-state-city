@@ -1,6 +1,6 @@
 {
   "name": "vk-country-state-city",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get country names, states, cities",
   "main": "country-state-city.js",
   "scripts": {
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/thenamevishnu/country-state-city/issues"
   },
-  "homepage": "https://github.com/thenamevishnu/country-state-city#readme"
+  "homepage": "https://github.com/thenamevishnu/country-state-city#readme",
+  "dependencies": {
+    "vk-country-state-city": "^1.0.1"
+  },
+  "devDependencies": {}
 }
