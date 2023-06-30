@@ -1,0 +1,22 @@
+{
+  "name": "country-state-city",
+  "version": "1.0.0",
+  "description": "Get country names, states, cities",
+  "main": "country-state-city.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenamevishnu/country-state-city.git"
+  },
+  "keywords": [
+    "country-state-city"
+  ],
+  "author": "thenamevishnu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thenamevishnu/country-state-city/issues"
+  },
+  "homepage": "https://github.com/thenamevishnu/country-state-city#readme"
+}
