@@ -1,5 +1,7 @@
 # country-state-city
 
+[![Node.js Package](https://github.com/thenamevishnu/country-state-city/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/thenamevishnu/country-state-city/actions/workflows/npm-publish.yml)
+
 <h2>How to Use ? </h2>
 
 <b>Nodejs<b>
